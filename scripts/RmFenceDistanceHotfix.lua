@@ -24,7 +24,7 @@ RmFenceDistanceHotfix.modName = g_currentModName
 -- Per-mod logger instance with automatic multiplayer context
 local Log = RmLogging.getLogger("FenceDistanceHotfix")
 
--- Module constants (use UPPER_SNAKE_CASE, scoped to module)
+-- Module constants
 -- Horizontal length in meters below which a too-short refusal counts as zero-length and is kept
 RmFenceDistanceHotfix.ZERO_LENGTH_LIMIT = 0.1
 
@@ -56,7 +56,7 @@ BaseMission.loadMapFinished = Utils.appendedFunction(
 -- ============================================================================
 
 ---Called when map is being deleted/unloaded
----Clean up subscriptions, state, and references
+---Logs the unload; the mod holds no subscriptions or per-map state to clean up
 local function onDeleteMap()
     Log:debug("Cleaning up FenceDistanceHotfix")
 end

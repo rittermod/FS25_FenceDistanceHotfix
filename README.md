@@ -43,13 +43,15 @@ The mod only changes the fence length check while you place a pasture. Every oth
 
 ## Troubleshooting
 
-To see which fence segments the mod let through, open the developer console and run:
+The log shows one `FALLBACK:` line for each short segment the mod let through, with its length and the fence's panel data. Include those lines when you report a problem.
+
+If the log shows no `FALLBACK:` lines, open the developer console and run:
 
 ```
 rmSetLoglevel FenceDistanceHotfix DEBUG
 ```
 
-Then place the pasture again. The log shows one `FALLBACK:` line for each short segment, with its length and the fence's panel data. Include those lines when you report a problem.
+Then place the pasture again.
 
 ## Compatibility
 
