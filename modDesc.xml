@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="114">
+    <author>Ritter</author>
+    <version>0.0.1.0</version>
+    <title>
+        <en>Fence Distance Hotfix</en>
+    </title>
+    <description>
+        <en><![CDATA[
+Lets husbandry mods be placed again after FS25 patch 1.25 changed the validation of the distance between fence posts.
+
+Patch 1.25 added a minimum length for a fence segment. If one segment of a pasture's built-in fence is shorter, the pasture cannot be placed anywhere and the cursor shows "Distance too short". This mod lets those segments through again while you place a pasture.
+
+This is a temporary fix that gives husbandry mod authors time to update their mods without hurry. It will be retired in a while, once authors have had time to update.
+
+Features:
+- Pastures with a short built-in fence segment can be placed again
+- Should work for every pasture
+- A segment too short for one panel gets no panel, as before patch 1.25
+- Fences you draw with the fence tool keep the 1.25 minimum length
+- Writes no savegame data; placed pastures still load after you remove the mod
+- Singleplayer only - this version does not support multiplayer.
+
+Documentation: https://github.com/rittermod/FS25_FenceDistanceHotfix
+
+Changelog:
+0.0.1.0:
+- Initial release
+        ]]>        </en>
+    </description>
+
+    <iconFilename>icon_fenceDistanceHotfix.dds</iconFilename>
+    <multiplayer supported="false"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/main.lua"/>
+    </extraSourceFiles>
+</modDesc>

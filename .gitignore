@@ -1,0 +1,3 @@
+# Test files (local only - symlink into the wrapper-root tests/ dir, dev-only).
+# Root-anchored so it only matches the scripts/tests symlink.
+/scripts/tests
